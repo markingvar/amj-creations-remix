@@ -1,0 +1,86 @@
+.index-wrapper {
+  min-height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.amj-logo-wrapper {
+  width: 90%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.amj-logo-fs-wrapper {
+  display: none;
+}
+
+.amj-call-us,
+.amj-email-us {
+  font-weight: bold;
+  margin-top: 26px;
+  font-size: 1.3em;
+  position: relative;
+}
+
+.amj-email-us {
+  display: none;
+}
+
+.amj-call-us::after,
+.amj-email-us::after {
+  content: "";
+  position: absolute;
+  --target: -8px;
+  top: var(--target);
+  bottom: var(--target);
+  left: var(--target);
+  right: var(--target);
+}
+
+.amj-page-title,
+.amj-coming-soon,
+.amj-coming-soon-desc {
+  text-align: center;
+}
+
+.amj-page-title {
+  font-size: 1.5em;
+  margin-top: 32px;
+}
+
+.amj-coming-soon {
+  font-size: 1.2em;
+}
+
+.amj-coming-soon-desc {
+  font-size: 1.05em;
+}
+
+@media (min-width: 550px) {
+  .index-wrapper {
+    max-width: 500px;
+  }
+
+  .amj-call-us {
+    display: none;
+  }
+
+  .amj-email-us {
+    display: block;
+  }
+
+  .amj-logo-wrapper {
+    display: none;
+  }
+
+  .amj-logo-fs-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 460px;
+  }
+}
